@@ -1,0 +1,13 @@
+[Unit]
+Description=Starts the processor for RBVC
+After=multi-user.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+User=thinkingmachine
+ExecStart=/usr/bin/python3 /home/thinkingmachine/rbvc/process_discord.py
+
+[Install]
+WantedBy=multi-user.target
