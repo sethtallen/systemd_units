@@ -1,0 +1,15 @@
+
+[Unit]
+Description=C4RD1N4L_V2 Discord Bot Starter
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=geiru
+ExecStart=/usr/bin/python3 /home/geiru/C4RD1N4L/bot.py
+
+[Install]
+WantedBy=multi-user.target
